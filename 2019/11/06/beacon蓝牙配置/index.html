@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | Hexo</title>
+  <title>beacon蓝牙配置 | Hexo</title>
   <meta name="keywords" content="">
-  <meta name="description" content="Hello World | Hexo">
+  <meta name="description" content="beacon蓝牙配置 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
@@ -293,9 +293,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-beacon蓝牙配置" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">beacon蓝牙配置</h1>
     
     <div class="article-meta">
         
@@ -305,7 +305,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-11-07 17:44:30'>2019-11-07 09:46</time>
+        创建时间:<time class="date" title='更新时间: 2019-11-06 22:00:50'>2019-11-06 21:33</time>
         
     </div>
     <div class="article-meta">
@@ -327,7 +327,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -343,19 +343,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>一.打开软件<br>点击工具栏中的help，选中Manage embedded software packages,下载STM32F4的1.24.1版本的固件包。然后选中STMicroelectronics,下载X_CUBE_BLE1的4.4.0版本的固件包和X_CUBE_MEMS1的6.2.0固件包。<br>二.点击New projiet 进入芯片选择页面<br>我这里选择的是STM32F401RETx(因为我的芯片就是这个型号，大家可以根据自己芯片的型号进行选择)<br>三.选择芯片后进入工程配置<br>1.在Additional Software中的STMicorelectronics.X_CUBE_BLE1分别展开隐藏的文件，Application中选择Beacon,HCI_TL选择Basic,HCI_TL_INTERFACE选择UserBoard。<br><img src="/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/1.jpg" alt></p>
+<p>2.在System Core中配置SWD调试模式。选中SYS,Debug中选择Serial Wire。<br><img src="/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/2.jpg" alt></p>
+<p>3.在Connectivity中配置全双工模式和串口的异步模式。在SPI1的Mode中选择Full_Duplex Master(全双工模式)，在下面的Parameter Settings配置时钟参数，在Clock Parameters中配置 Prescaler（预分频器）为4；选择USART1,Mode中选择Asynchronous(异步模式)</p>
+<p><img src="/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/3.jpg" alt><br><img src="/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/4.jpg" alt></p>
+<p>4.点击Additional Software 下方的X_CUBE_BLE1.4.4.0, 然后把Wireless BlueNRG_MS和 Wireless Application都勾选上。然后在Platform Settings下方进行相关配置，根据原理图把 PC4设置为外部中断引脚，所以Exti Line中选择PC4；当初是在SPI1中设置的全双工模式，所以BUS IO driver中选择的是SPI1;设置PA4和PB1为GPIO_Output,所以CS Line 中选择PA4,Reset Linez 中选择PB1，在BSP USART中选择USART1。<br><img src="/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/5.jpg" alt></p>
+<p>5.选择芯片上方的System view,然后选中GPIO,在左侧的方格中选择NVIC把EXTI line4 interrruput 勾选上。<br><img src="/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/6.jpg" alt></p>
+<p>四.点击菜单栏中的Project Manager进入工程配置<br>命名好工程名称和选择好工程存储路径就可以点击GENERATE CODE生成工程了。（这里强调一下工程名和 工程存储路径中最好都是英文不要存在中文，不然容易出错）进入工程后可以先运行下看看是否是零个错误零个警告，如果是的说明工程建立成功。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -369,12 +363,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
+    <p><span class="copy-title">文章标题:</span>beacon蓝牙配置</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" target="_blank" rel="noopener" title="John Doe">John Doe</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-11-07, 09:46:04</p>
-    <p><span class="copy-title">最后更新:</span>2019-11-07, 17:44:30</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/07/hello-world/" title="Hello World">http://ccit18081430514.github.io/2019/11/07/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2019-11-06, 21:33:22</p>
+    <p><span class="copy-title">最后更新:</span>2019-11-06, 22:00:50</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/" title="beacon蓝牙配置">http://ccit18081430514.github.io/2019/11/06/beacon%E8%93%9D%E7%89%99%E9%85%8D%E7%BD%AE/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
